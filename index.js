@@ -5,7 +5,7 @@ import { createUserMessage, chatCompletion } from './modules/openai.js';
 const filePath = 'data/categories.csv';
 const responseFilePath = 'data/response-iterative.csv';
 const batchSize = 100;
-const offset = 9;
+let offset = 9;
 const categoriesArray = await readCategoriesCSV(filePath);
 
 // 2. Batch the array of strings into batches of 10 items. 
