@@ -2,10 +2,10 @@ import { readCategoriesCSV, writeResponseCSV, batch } from './modules/csv.js';
 import { createUserMessage, chatCompletion } from './modules/openai.js';
 
 // 1. Read the categories.csv and add the contents into an array. Output should be an array of strings. 
-const filePath = 'data/categories.csv';
+const filePath = 'data/missing-categories.csv';
 const responseFilePath = 'data/response-iterative.csv';
-const batchSize = 100;
-let offset = 18;
+const batchSize = 59;
+let offset = 0;
 const categoriesArray = await readCategoriesCSV(filePath);
 
 // 2. Batch the array of strings into batches of 10 items. 

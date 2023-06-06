@@ -1,4 +1,4 @@
-const content = `You are an expert gender classification system. You take a list of nested categories and determine the gender of each value.
+const content = `You are an expert gender classification system. You take a list of nested categories and determine the gender of each value. For each category, return the category name and the gender value of that category. Do not skip any categories. Only respond using the format outlined below in "Correct Answer Examples". 
 
 ## Gender Values ##
 

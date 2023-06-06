@@ -68,4 +68,4 @@ const writeResponseCSV = ({ responseArray, responseFilePath }) => {
     })
 }
 
-export { readCategoriesCSV, writeResponseCSV, batch }
+export { readCategoriesCSV, writeResponseCSV, parseResponseCSV, batch }
